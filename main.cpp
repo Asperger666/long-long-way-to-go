@@ -1,12 +1,13 @@
-#include <iostream>
-
+#include<iostream>
 using namespace std;
-
 int main()
 {
-    char s[100]="This is only for practice.";
-    char *p;
-    for(p=&s[0];*p!='\0';) *p++=0; //删除字符串中的每一个字符
-    cout<<s<<endl;//检测是否成功删除了每一个字符
+    int a[5];
+    int* x,y;
+    x=&a[0];
+    y=&a[1];
+    a[0]=123;
+    a[1]=456;
+    cout<<*x<<endl<<*x++<<endl<<*++x;
     return 0;
-}
+    }
